@@ -1,0 +1,5 @@
+{
+  "name": "Selvy",
+  "description": "A desktop-style application for managing AI agent metrics with SQL integration.",
+  "requestFramePermissions": []
+}

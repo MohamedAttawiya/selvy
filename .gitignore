@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Build / output
+dist/
+build/
+coverage/
+*.js.map
+
+# CDK
+.cdk.staging
+cdk.out/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Debug / scratch files at repo root
+debug-*.json
+debug-*.txt
+metrics-dump.json
+query-start*.json
+query-status*.json
