@@ -39,6 +39,15 @@ export class DataStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     });
 
+    const checkpointsTable = new dynamodb.Table(this, "CheckpointsTable", {
+      tableName: `${props.prefix}-checkpoints`,
+      partitionKey: { name: "thread_id", type: dynamodb.AttributeType.STRING },
+      sortKey: { name: "entry_key", type: dynamodb.AttributeType.STRING },
+      billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
+      timeToLiveAttribute: "expires_at",
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+    });
+
     // ── Legacy tables (keep until dependent stacks migrate to SSM) ──
     this.capabilitiesTable = new dynamodb.Table(this, "CapabilitiesTable", {
       tableName: `${props.prefix}-capabilities`,
@@ -80,9 +89,18 @@ export class DataStack extends cdk.Stack {
       parameterName: `/${props.prefix}/data/conversations-table-arn`,
       stringValue: conversationsTable.tableArn,
     });
+    new ssm.StringParameter(this, "SsmCheckpointsTableName", {
+      parameterName: `/${props.prefix}/data/checkpoints-table-name`,
+      stringValue: checkpointsTable.tableName,
+    });
+    new ssm.StringParameter(this, "SsmCheckpointsTableArn", {
+      parameterName: `/${props.prefix}/data/checkpoints-table-arn`,
+      stringValue: checkpointsTable.tableArn,
+    });
 
     new cdk.CfnOutput(this, "MetricsTableName", { value: metricsTable.tableName });
     new cdk.CfnOutput(this, "SlackRequestsTableName", { value: slackRequestsTable.tableName });
     new cdk.CfnOutput(this, "ConversationsTableName", { value: conversationsTable.tableName });
+    new cdk.CfnOutput(this, "CheckpointsTableName", { value: checkpointsTable.tableName });
   }
 }

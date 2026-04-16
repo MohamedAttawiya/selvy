@@ -23,10 +23,12 @@ export class AiWorkflowStack extends cdk.Stack {
     const metricsTableArn = ssm.StringParameter.valueForStringParameter(this, `/${props.prefix}/data/metrics-table-arn`);
     const slackRequestsTableArn = ssm.StringParameter.valueForStringParameter(this, `/${props.prefix}/data/slack-requests-table-arn`);
     const conversationsTableArn = ssm.StringParameter.valueForStringParameter(this, `/${props.prefix}/data/conversations-table-arn`);
+    const checkpointsTableArn = ssm.StringParameter.valueForStringParameter(this, `/${props.prefix}/data/checkpoints-table-arn`);
 
     const metricsTable = dynamodb.Table.fromTableArn(this, "MetricsTable", metricsTableArn);
     const slackRequestsTable = dynamodb.Table.fromTableArn(this, "SlackRequestsTable", slackRequestsTableArn);
     const conversationsTable = dynamodb.Table.fromTableArn(this, "ConversationsTable", conversationsTableArn);
+    const checkpointsTable = dynamodb.Table.fromTableArn(this, "CheckpointsTable", checkpointsTableArn);
 
     // Secrets Manager secret for Slack credentials
     const slackSecret = new secretsmanager.Secret(this, "SlackSecret", {
@@ -50,11 +52,24 @@ export class AiWorkflowStack extends cdk.Stack {
       handler: "index.handler",
       timeout: cdk.Duration.seconds(90),
       memorySize: 256,
-      code: lambda.Code.fromAsset(path.join(__dirname, "../../lambda/slack-handler")),
+      code: lambda.Code.fromAsset(path.join(__dirname, "../../lambda/slack-handler"), {
+        exclude: [
+          "last*.json",
+          "recent*.json",
+          "window*.json",
+          "read-*.json",
+          "write-*.json",
+          "req-*.json",
+          "orders_analytics_item.json",
+          "*.log",
+        ],
+      }),
       environment: {
         SLACK_REQUESTS_TABLE: slackRequestsTable.tableName,
         CONVERSATIONS_TABLE: conversationsTable.tableName,
         METRICS_TABLE: metricsTable.tableName,
+        CHECKPOINTS_TABLE: checkpointsTable.tableName,
+        CHECKPOINT_TTL_SECONDS: "2592000",
         BEDROCK_MODEL_ID: "anthropic.claude-3-haiku-20240307-v1:0",
         BEDROCK_EXTRACT_MODEL_ID: "global.anthropic.claude-sonnet-4-6",
         BEDROCK_SUMMARY_MODEL_ID: "global.anthropic.claude-sonnet-4-6",
@@ -76,6 +91,7 @@ export class AiWorkflowStack extends cdk.Stack {
     slackRequestsTable.grantReadWriteData(slackHandler);
     conversationsTable.grantReadWriteData(slackHandler);
     metricsTable.grantReadData(slackHandler);
+    checkpointsTable.grantReadWriteData(slackHandler);
 
     const osEndpointParamArn = cdk.Stack.of(this).formatArn({
       service: "ssm",
