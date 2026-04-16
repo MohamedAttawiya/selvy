@@ -1,0 +1,8 @@
+{
+  "name": "selvy-write",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@opensearch-project/opensearch": "2.13.0"
+  }
+}

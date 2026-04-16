@@ -1,0 +1,251 @@
+﻿{
+    "events": [
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283284596,
+            "message": "START RequestId: a3bc86ea-b862-48bd-98e2-4e670923ead8 Version: $LATEST\n",
+            "ingestionTime": 1776283293625,
+            "eventId": "39612440930184451388885108585607405158032131393535148032"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283284629,
+            "message": "2026-04-15T20:01:24.629Z\ta3bc86ea-b862-48bd-98e2-4e670923ead8\tINFO\tslack-event {\"requestId\":\"a3bc86ea-b862-48bd-98e2-4e670923ead8\",\"isBase64Encoded\":false,\"rawBodyBytes\":1143,\"slackPayload\":{\"token\":\"[redacted]\",\"team_id\":\"T01698U3K1U\",\"enterprise_id\":\"E015GUGD2V6\",\"context_team_id\":null,\"context_enterprise_id\":\"E015GUGD2V6\",\"api_app_id\":\"A0ART4HG9C0\",\"event\":{\"type\":\"message\",\"user\":\"U06MCNJTDJS\",\"ts\":\"1776283283.087889\",\"client_msg_id\":\"f28a0b75-7491-4328-b67d-b385875f50da\",\"text\":\"check these orders\\n404-1667648-9161919\\n408-5733102-3267567\\n406-2454589-1769969\\n171-1921111-7240302\",\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"47IQ9\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"text\",\"text\":\"check these orders\\n404-1667648-9161919\\n408-5733102-3267567\\n406-2454589-1769969\\n171-1921111-7240302\"}]}]}],\"language\":{\"locale\":\"en\",\"is_reliable\":true},\"channel\":\"D0AQWR8U7B8\",\"event_ts\":\"1776283283.087889\",\"channel_type\":\"im\"},\"type\":\"event_callback\",\"event_id\":\"Ev0ATA247ELU\",\"event_time\":1776283283,\"authorizations\":\"[redacted]\",\"is_ext_shared_channel\":false,\"event_context\":\"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDE2OThVM0sxVSIsImFpZCI6IkEwQVJUNEhHOUMwIiwiY2lkIjoiRDBBUVdSOFU3QjgifQ\"}}\n",
+            "ingestionTime": 1776283293625,
+            "eventId": "39612440930920375980436619149278083861029527323232501761"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283285227,
+            "message": "END RequestId: a3bc86ea-b862-48bd-98e2-4e670923ead8\n",
+            "ingestionTime": 1776283293625,
+            "eventId": "39612440944256221609157931787916443388073247503808790530"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283285227,
+            "message": "REPORT RequestId: a3bc86ea-b862-48bd-98e2-4e670923ead8\tDuration: 630.88 ms\tBilled Duration: 631 ms\tMemory Size: 256 MB\tMax Memory Used: 165 MB\t\n",
+            "ingestionTime": 1776283293625,
+            "eventId": "39612440944256221609157931787916443388073247503808790531"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283285231,
+            "message": "START RequestId: d79f4d57-9d36-44f2-8162-27ba29b24e86 Version: $LATEST\n",
+            "ingestionTime": 1776283294251,
+            "eventId": "39612440944345424589952054281239300978087253840408739840"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283287185,
+            "message": "START RequestId: d7d864da-57ee-4a2a-89d9-d6403c7d3a23 Version: $LATEST\n",
+            "ingestionTime": 1776283293625,
+            "eventId": "39612440987921080707880891899043379765918739332518445060"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283287187,
+            "message": "2026-04-15T20:01:27.187Z\td7d864da-57ee-4a2a-89d9-d6403c7d3a23\tINFO\tslack-event {\"requestId\":\"d7d864da-57ee-4a2a-89d9-d6403c7d3a23\",\"isBase64Encoded\":false,\"rawBodyBytes\":1379,\"slackPayload\":{\"token\":\"[redacted]\",\"team_id\":\"T01698U3K1U\",\"enterprise_id\":\"E015GUGD2V6\",\"context_team_id\":null,\"context_enterprise_id\":\"E015GUGD2V6\",\"api_app_id\":\"A0ART4HG9C0\",\"event\":{\"type\":\"message\",\"user\":\"U0AQVEA9ECV\",\"ts\":\"1776283286.315229\",\"bot_id\":\"B0AR2EBDM5J\",\"app_id\":\"A0ART4HG9C0\",\"text\":\"Working on it...\",\"team\":\"T01698U3K1U\",\"bot_profile\":{\"id\":\"B0AR2EBDM5J\",\"deleted\":false,\"name\":\"Selvy Dev\",\"updated\":1775401869,\"app_id\":\"A0ART4HG9C0\",\"user_id\":\"U0AQVEA9ECV\",\"icons\":{\"image_36\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_36.png\",\"image_48\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_48.png\",\"image_72\":\"https://a.slack-edge.com/80588/img/plugins/app/service_72.png\"},\"team_id\":\"T01698U3K1U\"},\"thread_ts\":\"1776283283.087889\",\"parent_user_id\":\"U06MCNJTDJS\",\"blocks\":[{\"type\":\"section\",\"block_id\":\"IwieB\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Working on it...\",\"verbatim\":false}}],\"channel\":\"D0AQWR8U7B8\",\"event_ts\":\"1776283286.315229\",\"channel_type\":\"im\"},\"type\":\"event_callback\",\"event_id\":\"Ev0AU0N2N6Q0\",\"event_time\":1776283286,\"authorizations\":\"[redacted]\",\"is_ext_shared_channel\":false,\"event_context\":\"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDE2OThVM0sxVSIsImFpZCI6IkEwQVJUNEhHOUMwIiwiY2lkIjoiRDBBUVdSOFU3QjgifQ\"}}\n",
+            "ingestionTime": 1776283293625,
+            "eventId": "39612440987965682198277953145326451202464036055530405893"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283287247,
+            "message": "END RequestId: d7d864da-57ee-4a2a-89d9-d6403c7d3a23\n",
+            "ingestionTime": 1776283293625,
+            "eventId": "39612440989303726910189790533818594298822937745889230854"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283287247,
+            "message": "REPORT RequestId: d7d864da-57ee-4a2a-89d9-d6403c7d3a23\tDuration: 61.66 ms\tBilled Duration: 62 ms\tMemory Size: 256 MB\tMax Memory Used: 165 MB\t\n",
+            "ingestionTime": 1776283293625,
+            "eventId": "39612440989303726910189790533818594298822937745889230855"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283289119,
+            "message": "2026-04-15T20:01:29.119Z\td79f4d57-9d36-44f2-8162-27ba29b24e86\tINFO\tSELVY_DEBUG extract-input {\"contextText\":\"check these orders\\n404-1667648-9161919\\n408-5733102-3267567\\n406-2454589-1769969\\n171-1921111-7240302\",\"schemaCount\":5,\"schemaIds\":[\"orders_analytics:order_trace\",\"orders_analytics:order_trace\",\"orders_analytics:order_trace\",\"orders_analytics:order_by_city\",\"orders_analytics:order_by_city\"]}\n",
+            "ingestionTime": 1776283294251,
+            "eventId": "39612441031050721921839117055530173622144083375660597249"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283293980,
+            "message": "2026-04-15T20:01:33.980Z\td79f4d57-9d36-44f2-8162-27ba29b24e86\tINFO\tSELVY_DEBUG extract-output {\"metric_id\":\"orders_analytics\",\"variation_id\":\"order_trace\",\"filters\":[{\"field\":\"order_id\",\"operator\":\"in\",\"value\":\"404-1667648-9161919,408-5733102-3267567,406-2454589-1769969,171-1921111-7240302\"}],\"group_by\":[],\"time_range\":{\"start\":null,\"end\":null,\"grain\":null},\"limit\":null,\"confidence\":0.97,\"nudge\":null}\n",
+            "ingestionTime": 1776283294251,
+            "eventId": "39612441139454644331896476146535300145487768656231399426"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283294179,
+            "message": "2026-04-15T20:01:34.179Z\td79f4d57-9d36-44f2-8162-27ba29b24e86\tINFO\tSELVY_DEBUG execute-schema-authoritative {\"metric_id\":\"orders_analytics\",\"variation_id\":\"order_trace\",\"source\":\"metrics_table\"}\n",
+            "ingestionTime": 1776283294251,
+            "eventId": "39612441143892492626404070151700908081744792595921502211"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283294198,
+            "message": "2026-04-15T20:01:34.198Z\td79f4d57-9d36-44f2-8162-27ba29b24e86\tINFO\tSELVY_DEBUG execute-sql {\"metric_id\":\"orders_analytics\",\"variation_id\":\"order_trace\",\"sql\":\"SELECT\\n  marketplace_id,\\n  order_id,\\n  order_day,\\n  order_placed_datetime,\\n  order_datetime,\\n  checkout_promise_window_end,\\n  order_delivered_time,\\n  otp,\\n  mins_late,\\n  store_name,\\n  city,\\n  tile_name,\\n  prime_customer,\\n  leo_segment,\\n  customer_id,\\n  asin,\\n  item_name,\\n  gl_product_group_desc,\\n  quantity,\\n  our_price,\\n  list_price,\\n  ship_option\\nFROM \\\"andes\\\".\\\"ufg_mena_bi.anow_orders_master\\\"\\nWHERE order_id = '404-1667648-9161919,408-5733102-3267567,406-2454589-1769969,171-1921111-7240302'\\nORDER BY order_datetime ASC\\nLIMIT 50\"}\n",
+            "ingestionTime": 1776283294251,
+            "eventId": "39612441144316206785176151991390086728925111464535130116"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283302666,
+            "message": "2026-04-15T20:01:42.666Z\td79f4d57-9d36-44f2-8162-27ba29b24e86\tINFO\tSELVY_DEBUG execute-result {\"rowCount\":0,\"columns\":[\"marketplace_id\",\"order_id\",\"order_day\",\"order_placed_datetime\",\"order_datetime\",\"checkout_promise_window_end\",\"order_delivered_time\",\"otp\",\"mins_late\",\"store_name\",\"city\",\"tile_name\",\"prime_customer\",\"leo_segment\",\"customer_id\",\"asin\",\"item_name\",\"gl_product_group_desc\",\"quantity\",\"our_price\"],\"firstRows\":[]}\n",
+            "ingestionTime": 1776283311694,
+            "eventId": "39612441333158917126333468775002311165535200158484529152"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283302698,
+            "message": "2026-04-15T20:01:42.698Z\td79f4d57-9d36-44f2-8162-27ba29b24e86\tINFO\tSELVY_DEBUG format-input {\"contextText\":\"check these orders\\n404-1667648-9161919\\n408-5733102-3267567\\n406-2454589-1769969\\n171-1921111-7240302\",\"rowCount\":0,\"summaryHint\":\"Present order details in a timeline format. Focus on delivery performance and any late deliveries.\"}\n",
+            "ingestionTime": 1776283311694,
+            "eventId": "39612441333872540972686448715531454150259947726675902465"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283307604,
+            "message": "2026-04-15T20:01:47.604Z\td79f4d57-9d36-44f2-8162-27ba29b24e86\tINFO\tSELVY_DEBUG format-output {\"summaryPreview\":\"## Order Lookup Results\\n\\n**No data found** for the 4 requested orders:\\n\\n| Order ID |\\n|---|\\n| 404-1667648-9161919 |\\n| 408-5733102-3267567 |\\n| 406-2454589-1769969 |\\n| 171-1921111-7240302 |\\n\\n### Possible Reasons:\\n- Orders may be **outside the query's date range**\\n- Orders may belong to a **different marketplace** not covered by this dataset\\n- Order IDs may have been **entered incorrectly**\\n- Orders may have been **cancelled or removed**\\n\\n### Recommended Next Steps:\\n1. **Verify the order IDs** are c\"}\n",
+            "ingestionTime": 1776283311694,
+            "eventId": "39612441443279996916677685847905687995872809275015823362"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283307960,
+            "message": "END RequestId: d79f4d57-9d36-44f2-8162-27ba29b24e86\n",
+            "ingestionTime": 1776283311694,
+            "eventId": "39612441451219062207354587686292403700935625971144851459"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283307960,
+            "message": "REPORT RequestId: d79f4d57-9d36-44f2-8162-27ba29b24e86\tDuration: 22727.82 ms\tBilled Duration: 22728 ms\tMemory Size: 256 MB\tMax Memory Used: 160 MB\t\n",
+            "ingestionTime": 1776283311694,
+            "eventId": "39612441451219062207354587686292403700935625971144851460"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283309888,
+            "message": "START RequestId: a42dbed6-e646-4f1e-8450-51248148b73c Version: $LATEST\n",
+            "ingestionTime": 1776283311694,
+            "eventId": "39612441494214898950121629103173268530601666954675093509"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283309889,
+            "message": "2026-04-15T20:01:49.889Z\ta42dbed6-e646-4f1e-8450-51248148b73c\tINFO\tslack-event {\"requestId\":\"a42dbed6-e646-4f1e-8450-51248148b73c\",\"isBase64Encoded\":false,\"rawBodyBytes\":2731,\"slackPayload\":{\"token\":\"[redacted]\",\"team_id\":\"T01698U3K1U\",\"enterprise_id\":\"E015GUGD2V6\",\"context_team_id\":null,\"context_enterprise_id\":\"E015GUGD2V6\",\"api_app_id\":\"A0ART4HG9C0\",\"event\":{\"type\":\"message\",\"user\":\"U0AQVEA9ECV\",\"ts\":\"1776283307.830869\",\"bot_id\":\"B0AR2EBDM5J\",\"app_id\":\"A0ART4HG9C0\",\"text\":\"## Order Lookup Results  **No data found** for the 4 requested orders:  | Order ID | |---| | 404-1667648-9161919 | | 408-5733102-3267567 | | 406-2454589-1769969 | | 171-1921111-7240302 |  ### Possible Reasons: - Orders may be **outside the query's date range** - Orders may belong to a **different marketplace** not covered by this dataset - Order IDs may have been **entered incorrectly** - Orders may have been **cancelled or removed**  ### Recommended Next Steps: 1. **Verify the order IDs** are correct 2. **Check the date range** � adjust the time window if these are older or very recent orders 3. **Confirm the marketplace** these orders belong to\",\"team\":\"T01698U3K1U\",\"bot_profile\":{\"id\":\"B0AR2EBDM5J\",\"deleted\":false,\"name\":\"Selvy Dev\",\"updated\":1775401869,\"app_id\":\"A0ART4HG9C0\",\"user_id\":\"U0AQVEA9ECV\",\"icons\":{\"image_36\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_36.png\",\"image_48\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_48.png\",\"image_72\":\"https://a.slack-edge.com/80588/img/plugins/app/service_72.png\"},\"team_id\":\"T01698U3K1U\"},\"thread_ts\":\"1776283283.087889\",\"parent_user_id\":\"U06MCNJTDJS\",\"blocks\":[{\"type\":\"section\",\"block_id\":\"9gtau\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"## Order Lookup Results\\n\\n**No data found** for the 4 requested orders:\\n\\n| Order ID |\\n|---|\\n| 404-1667648-9161919 |\\n| 408-5733102-3267567 |\\n| 406-2454589-1769969 |\\n| 171-1921111-7240302 |\\n\\n### Possible Reasons:\\n- Orders may be **outside the query's date range**\\n- Orders may belong to a **different marketplace** not covered by this dataset\\n- Order IDs may have been **entered incorrectly**\\n- Orders may have been **cancelled or removed**\\n\\n### Recommended Next Steps:\\n1. **Verify the order IDs** are correct\\n2. **Check the date range** � adjust the time window if these are older or very recent orders\\n3. **Confirm the marketplace** these orders belong to\",\"verbatim\":false}}],\"language\":{\"locale\":\"en\",\"is_reliable\":true},\"channel\":\"D0AQWR8U7B8\",\"event_ts\":\"1776283307.830869\",\"channel_type\":\"im\"},\"type\":\"event_callback\",\"event_id\":\"Ev0AT4CD470E\",\"event_time\":1776283307,\"authorizations\":\"[redacted]\",\"is_ext_shared_channel\":false,\"event_context\":\"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDE2OThVM0sxVSIsImFpZCI6IkEwQVJUNEhHOUMwIiwiY2lkIjoiRDBBUVdSOFU3QjgifQ\"}}\n",
+            "ingestionTime": 1776283311694,
+            "eventId": "39612441494237199695320159726314804248874315316181073926"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283309900,
+            "message": "END RequestId: a42dbed6-e646-4f1e-8450-51248148b73c\n",
+            "ingestionTime": 1776283311694,
+            "eventId": "39612441494482507892503996580871697149873447292746858503"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283309900,
+            "message": "REPORT RequestId: a42dbed6-e646-4f1e-8450-51248148b73c\tDuration: 11.41 ms\tBilled Duration: 12 ms\tMemory Size: 256 MB\tMax Memory Used: 160 MB\t\n",
+            "ingestionTime": 1776283311694,
+            "eventId": "39612441494482507892503996580871697149873447292746858504"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283428077,
+            "message": "START RequestId: 24336ae3-cb62-4938-b127-c63a9bb18d4e Version: $LATEST\n",
+            "ingestionTime": 1776283437106,
+            "eventId": "39612444129917673219257447729752114492164681229583581184"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283428079,
+            "message": "2026-04-15T20:03:48.079Z\t24336ae3-cb62-4938-b127-c63a9bb18d4e\tINFO\tslack-event {\"requestId\":\"24336ae3-cb62-4938-b127-c63a9bb18d4e\",\"isBase64Encoded\":false,\"rawBodyBytes\":957,\"slackPayload\":{\"token\":\"[redacted]\",\"team_id\":\"T01698U3K1U\",\"enterprise_id\":\"E015GUGD2V6\",\"context_team_id\":null,\"context_enterprise_id\":\"E015GUGD2V6\",\"api_app_id\":\"A0ART4HG9C0\",\"event\":{\"type\":\"message\",\"user\":\"U06MCNJTDJS\",\"ts\":\"1776283427.170809\",\"client_msg_id\":\"5157929b-6969-4dd3-b0b6-5a22ce7fb2b8\",\"text\":\"trace order\\n408-5733102-3267567\",\"blocks\":[{\"type\":\"rich_text\",\"block_id\":\"WPx0f\",\"elements\":[{\"type\":\"rich_text_section\",\"elements\":[{\"type\":\"text\",\"text\":\"trace order\\n408-5733102-3267567\"}]}]}],\"channel\":\"D0AQWR8U7B8\",\"event_ts\":\"1776283427.170809\",\"channel_type\":\"im\"},\"type\":\"event_callback\",\"event_id\":\"Ev0AU0NNV7GQ\",\"event_time\":1776283427,\"authorizations\":\"[redacted]\",\"is_ext_shared_channel\":false,\"event_context\":\"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDE2OThVM0sxVSIsImFpZCI6IkEwQVJUNEhHOUMwIiwiY2lkIjoiRDBBUVdSOFU3QjgifQ\"}}\n",
+            "ingestionTime": 1776283437106,
+            "eventId": "39612444129962274709654508976035185928709977952595542017"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283428272,
+            "message": "END RequestId: 24336ae3-cb62-4938-b127-c63a9bb18d4e\n",
+            "ingestionTime": 1776283437106,
+            "eventId": "39612444134266318532970919242351579555331111723249762306"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283428272,
+            "message": "REPORT RequestId: 24336ae3-cb62-4938-b127-c63a9bb18d4e\tDuration: 193.65 ms\tBilled Duration: 194 ms\tMemory Size: 256 MB\tMax Memory Used: 160 MB\t\n",
+            "ingestionTime": 1776283437106,
+            "eventId": "39612444134266318532970919242351579555331111723249762307"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283428311,
+            "message": "START RequestId: 873e6cac-d8c1-449c-b6a1-1133dffa51fe Version: $LATEST\n",
+            "ingestionTime": 1776283437106,
+            "eventId": "39612444135136047595713613544871472567964397821982998532"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283429257,
+            "message": "2026-04-15T20:03:49.257Z\t873e6cac-d8c1-449c-b6a1-1133dffa51fe\tINFO\tSELVY_DEBUG extract-input {\"contextText\":\"trace order\\n408-5733102-3267567\",\"schemaCount\":5,\"schemaIds\":[\"orders_analytics:order_trace\",\"orders_analytics:order_trace\",\"orders_analytics:order_trace\",\"orders_analytics:order_trace\",\"orders_analytics:order_trace\"]}\n",
+            "ingestionTime": 1776283437106,
+            "eventId": "39612444156232552553523583036764262053889747806640472069"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283429767,
+            "message": "2026-04-15T20:03:49.767Z\t2bb2ef70-b98b-4773-95e2-458af4c9e961\tINFO\tslack-event {\"requestId\":\"2bb2ef70-b98b-4773-95e2-458af4c9e961\",\"isBase64Encoded\":false,\"rawBodyBytes\":1379,\"slackPayload\":{\"token\":\"[redacted]\",\"team_id\":\"T01698U3K1U\",\"enterprise_id\":\"E015GUGD2V6\",\"context_team_id\":null,\"context_enterprise_id\":\"E015GUGD2V6\",\"api_app_id\":\"A0ART4HG9C0\",\"event\":{\"type\":\"message\",\"user\":\"U0AQVEA9ECV\",\"ts\":\"1776283428.429269\",\"bot_id\":\"B0AR2EBDM5J\",\"app_id\":\"A0ART4HG9C0\",\"text\":\"Working on it...\",\"team\":\"T01698U3K1U\",\"bot_profile\":{\"id\":\"B0AR2EBDM5J\",\"deleted\":false,\"name\":\"Selvy Dev\",\"updated\":1775401869,\"app_id\":\"A0ART4HG9C0\",\"user_id\":\"U0AQVEA9ECV\",\"icons\":{\"image_36\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_36.png\",\"image_48\":\"https://a.slack-edge.com/80588/img/plugins/app/bot_48.png\",\"image_72\":\"https://a.slack-edge.com/80588/img/plugins/app/service_72.png\"},\"team_id\":\"T01698U3K1U\"},\"thread_ts\":\"1776283427.170809\",\"parent_user_id\":\"U06MCNJTDJS\",\"blocks\":[{\"type\":\"section\",\"block_id\":\"IwieB\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Working on it...\",\"verbatim\":false}}],\"channel\":\"D0AQWR8U7B8\",\"event_ts\":\"1776283428.429269\",\"channel_type\":\"im\"},\"type\":\"event_callback\",\"event_id\":\"Ev0ATKBM548Z\",\"event_time\":1776283428,\"authorizations\":\"[redacted]\",\"is_ext_shared_channel\":false,\"event_context\":\"4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDE2OThVM0sxVSIsImFpZCI6IkEwQVJUNEhHOUMwIiwiY2lkIjoiRDBBUVdSOFU3QjgifQ\"}}\n",
+            "ingestionTime": 1776283438786,
+            "eventId": "39612444167605932604774200840977964765152019617166458880"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283429767,
+            "message": "START RequestId: 2bb2ef70-b98b-4773-95e2-458af4c9e961 Version: $LATEST\n",
+            "ingestionTime": 1776283438786,
+            "eventId": "39612444167605932604774200840977964765152019617166458881"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283429833,
+            "message": "END RequestId: 2bb2ef70-b98b-4773-95e2-458af4c9e961\n",
+            "ingestionTime": 1776283438786,
+            "eventId": "39612444169077781787877221968319322171146811476561166338"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]a96042bfefd241f9a0e6e02575e67534",
+            "timestamp": 1776283429833,
+            "message": "REPORT RequestId: 2bb2ef70-b98b-4773-95e2-458af4c9e961\tDuration: 65.82 ms\tBilled Duration: 66 ms\tMemory Size: 256 MB\tMax Memory Used: 165 MB\t\n",
+            "ingestionTime": 1776283438786,
+            "eventId": "39612444169077781787877221968319322171146811476561166339"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283432600,
+            "message": "2026-04-15T20:03:52.600Z\t873e6cac-d8c1-449c-b6a1-1133dffa51fe\tINFO\tSELVY_DEBUG extract-output {\"metric_id\":\"orders_analytics\",\"variation_id\":\"order_trace\",\"filters\":[{\"field\":\"order_id\",\"operator\":\"eq\",\"value\":\"408-5733102-3267567\"}],\"group_by\":[],\"time_range\":{\"start\":null,\"end\":null,\"grain\":null},\"limit\":null,\"confidence\":0.99,\"nudge\":null}\n",
+            "ingestionTime": 1776283437106,
+            "eventId": "39612444230783943752211456198918168239353220321133002758"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283432679,
+            "message": "2026-04-15T20:03:52.679Z\t873e6cac-d8c1-449c-b6a1-1133dffa51fe\tINFO\tSELVY_DEBUG execute-schema-authoritative {\"metric_id\":\"orders_analytics\",\"variation_id\":\"order_trace\",\"source\":\"metrics_table\"}\n",
+            "ingestionTime": 1776283437106,
+            "eventId": "39612444232545702622895375427099489982892440880105455623"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283432679,
+            "message": "2026-04-15T20:03:52.679Z\t873e6cac-d8c1-449c-b6a1-1133dffa51fe\tINFO\tSELVY_DEBUG execute-sql {\"metric_id\":\"orders_analytics\",\"variation_id\":\"order_trace\",\"sql\":\"SELECT\\n  marketplace_id,\\n  order_id,\\n  order_day,\\n  order_placed_datetime,\\n  order_datetime,\\n  checkout_promise_window_end,\\n  order_delivered_time,\\n  otp,\\n  mins_late,\\n  store_name,\\n  city,\\n  tile_name,\\n  prime_customer,\\n  leo_segment,\\n  customer_id,\\n  asin,\\n  item_name,\\n  gl_product_group_desc,\\n  quantity,\\n  our_price,\\n  list_price,\\n  ship_option\\nFROM \\\"andes\\\".\\\"ufg_mena_bi.anow_orders_master\\\"\\nWHERE order_id = '408-5733102-3267567'\\nORDER BY order_datetime ASC\\nLIMIT 50\"}\n",
+            "ingestionTime": 1776283437106,
+            "eventId": "39612444232545702622895375427099489982892440880105455624"
+        },
+        {
+            "logStreamName": "2026/04/15/[$LATEST]069c02988eec4b6bb64d381219cf64af",
+            "timestamp": 1776283438418,
+            "message": 

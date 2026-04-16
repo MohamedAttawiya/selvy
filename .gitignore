@@ -42,3 +42,9 @@ debug-*.txt
 metrics-dump.json
 query-start*.json
 query-status*.json
+node_modules/
+cdk.out/
+dist/
+build/
+.env
+*.log

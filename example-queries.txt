@@ -120,18 +120,18 @@ GROUP BY marketplace_id
 ORDER BY marketplace_id ASC
 
 === order_overview ===
-SELECT
-  marketplace_id,
-  COUNT(DISTINCT order_id) AS order_count,
-  COUNT(*) AS item_count,
-  SUM(CAST(quantity AS DOUBLE)) / NULLIF(COUNT(DISTINCT order_id), 0) AS upo,
-  SUM(CAST(COALESCE(ops_usd, 0) AS DOUBLE)) AS ops_usd,
-  SUM(CAST(COALESCE(promo_amount_usd, 0) AS DOUBLE)) AS promo_usd
-FROM "andes"."ufg_mena_bi.anow_orders_master"
-WHERE CAST(order_day AS DATE) BETWEEN CAST('2026-04-01' AS DATE) AND CAST('2026-04-14' AS DATE)
-  AND marketplace_id = '338801'
-GROUP BY marketplace_id
-ORDER BY order_count DESC
+  SELECT
+    marketplace_id,
+    COUNT(DISTINCT order_id) AS order_count,
+    COUNT(*) AS item_count,
+    SUM(CAST(quantity AS DOUBLE)) / NULLIF(COUNT(DISTINCT order_id), 0) AS upo,
+    SUM(CAST(COALESCE(ops_usd, 0) AS DOUBLE)) AS ops_usd,
+    SUM(CAST(COALESCE(promo_amount_usd, 0) AS DOUBLE)) AS promo_usd
+  FROM "andes"."ufg_mena_bi.anow_orders_master"
+  WHERE CAST(order_day AS DATE) BETWEEN CAST('2026-04-01' AS DATE) AND CAST('2026-04-14' AS DATE)
+    AND marketplace_id = '338801'
+  GROUP BY marketplace_id
+  ORDER BY order_count DESC
 
 
 ================================================================================

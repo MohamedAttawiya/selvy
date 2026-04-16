@@ -1,0 +1,11 @@
+{
+  "name": "slack-handler",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@langchain/langgraph": "1.2.8",
+    "@opensearch-project/opensearch": "2.13.0",
+    "@aws-sdk/client-athena": "3.864.0",
+    "zod": "4.3.6"
+  }
+}
