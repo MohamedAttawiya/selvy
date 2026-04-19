@@ -296,7 +296,10 @@ export function buildDateWindowFootnote(extraction) {
   const comparisonPeriods = Array.isArray(extraction?.comparison_periods) ? extraction.comparison_periods : [];
   if (comparisonPeriods.length >= 2) {
     const parts = comparisonPeriods.map((p) => `${p.label || "period"}: ${p.start} to ${p.end}`).join(" | ");
-    return `_Date windows used: ${parts} (reporting calendar resolution)._`;
+    const source = extraction?.time_range_source === "reporting_calendar"
+      ? "reporting calendar resolution"
+      : "prompt/intent inference";
+    return `_Date windows used: ${parts} (${source})._`;
   }
   const start = extraction?.time_range?.start;
   const end = extraction?.time_range?.end;
@@ -357,4 +360,3 @@ export function renderStructuredToSlackMrkdwn(structured) {
 
   return normalizeSlackMrkdwn(lines.join("\n"));
 }
-

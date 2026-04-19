@@ -8,7 +8,7 @@ import {
   hasRequiredBindingInTemplate,
 } from "../../domain/sql.mjs";
 import {
-  detectWeekComparisonPlan,
+  detectComparisonPlan,
   parseTimeIntent,
   resolveReportingDates,
 } from "../../domain/dates.mjs";
@@ -121,7 +121,7 @@ export function createOrdersAnalyticsWorkflow({ services, checkpointer }) {
 
           const latestText = getRecentUserText(state.messages, 1);
           const contextText = getRecentUserText(state.messages, 3);
-          const comparisonPlan = detectWeekComparisonPlan(latestText, contextText);
+          const comparisonPlan = detectComparisonPlan(latestText, contextText);
           if (comparisonPlan) {
             const periods = [comparisonPlan.focus, comparisonPlan.baseline];
             const sortedByStart = [...periods].sort((a, b) => a.start.localeCompare(b.start));
@@ -132,16 +132,19 @@ export function createOrdersAnalyticsWorkflow({ services, checkpointer }) {
                   ...extraction.time_range,
                   start: sortedByStart[0].start,
                   end: sortedByStart[sortedByStart.length - 1].end,
-                  grain: "week",
+                  grain: comparisonPlan.grain || extraction?.time_range?.grain || null,
                 },
                 comparison_periods: periods.map((period) => ({
                   label: period.label,
                   week: period.week,
                   year: period.year,
+                  quarter: period.quarter,
+                  month: period.month,
+                  grain: period.grain || comparisonPlan.grain || null,
                   start: period.start,
                   end: period.end,
                 })),
-                time_range_source: "reporting_calendar",
+                time_range_source: comparisonPlan.source || extraction?.time_range_source || "prompt_inference",
               },
             };
           }
@@ -310,7 +313,7 @@ export function createOrdersAnalyticsWorkflow({ services, checkpointer }) {
           if (comparisonPeriods.length < 2) {
             const latestText = getRecentUserText(state.messages, 1);
             const contextText = getRecentUserText(state.messages, 3);
-            const derivedPlan = detectWeekComparisonPlan(latestText, contextText);
+            const derivedPlan = detectComparisonPlan(latestText, contextText);
             if (derivedPlan) comparisonPeriods = [derivedPlan.focus, derivedPlan.baseline];
           }
 
@@ -321,6 +324,9 @@ export function createOrdersAnalyticsWorkflow({ services, checkpointer }) {
               label: period.label,
               week: period.week,
               year: period.year,
+              quarter: period.quarter,
+              month: period.month,
+              grain: period.grain || null,
               start: period.start,
               end: period.end,
             })),
@@ -382,9 +388,9 @@ export function createOrdersAnalyticsWorkflow({ services, checkpointer }) {
                 ...extraction.time_range,
                 start: period.start,
                 end: period.end,
-                grain: "week",
+                grain: period.grain || extraction?.time_range?.grain || null,
               },
-              time_range_source: "reporting_calendar",
+              time_range_source: extraction?.time_range_source || "prompt_inference",
             };
             const periodSql = compileSqlWithDynamicFilters(schema.sql || "", periodExtraction, schema);
             const unresolvedPeriod = getUnresolvedSqlParams(periodSql);
@@ -415,16 +421,19 @@ export function createOrdersAnalyticsWorkflow({ services, checkpointer }) {
               ...extraction.time_range,
               start: sorted[0]?.start || extraction?.time_range?.start || null,
               end: sorted[sorted.length - 1]?.end || extraction?.time_range?.end || null,
-              grain: "week",
+              grain: periods[0]?.grain || extraction?.time_range?.grain || null,
             },
             comparison_periods: periods.map((period) => ({
               label: period.label,
               week: period.week,
               year: period.year,
+              quarter: period.quarter,
+              month: period.month,
+              grain: period.grain || null,
               start: period.start,
               end: period.end,
             })),
-            time_range_source: "reporting_calendar",
+            time_range_source: extraction?.time_range_source || "prompt_inference",
           };
 
           return {
